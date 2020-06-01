@@ -18,4 +18,4 @@ The Airtable API is used to perform
 
 
 # Screen of airtable base
-![Screenshot of Airtbale base]('./screenshots/airtable-blog-shot.PNG')
+![Screenshot of Airtbale base](./screenshots/airtable-blog-shot.PNG)
