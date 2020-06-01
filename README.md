@@ -17,5 +17,5 @@ The Airtable API is used to perform
 5. Perform your CRUD functionality
 
 
-# Screenshot of airtable base
+# Screen of airtable base
 ![Screenshot of Airtbale base](./screenshots/airtable-blog-shot.PNG)
