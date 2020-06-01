@@ -1,4 +1,4 @@
-# Day 1: Airtable Blog APi
+# Day 1: Airtable Blog API
 
 Airtable serves as the DB for this project
 The Airtable API is used to perform
