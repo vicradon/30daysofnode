@@ -11,9 +11,11 @@
     "bcrypt": "^4.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.16",
-    "password-validator": "^5.0.3"
+    "password-validator": "^5.0.3",
+    "showdown": "^1.9.1"
   },
   "scripts": {
     "dev": "nodemon src/index.js",

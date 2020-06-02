@@ -1,21 +1,20 @@
-# Day 1: Airtable Blog API
+# Day 2: HTML to MD
 
-Airtable serves as the DB for this project
-The Airtable API is used to perform
+## Features
 
-1. Posting,
-2. Editing,
-3. Deleting,
-4. Reading of blog posts
+1. Post html text,
+2. Upload html files,
 
 ## To Use
 
 1. Clone the repo
-2. Naviagate to this day1_airtable_blog
+2. Naviagate to this day2_md_to_html
 3. install dependencies
-4. Use the .env.example to generate your own .env file
-5. Perform your CRUD functionality
 
+# Screenshot of conversion on POSTMAN
 
-# Screen of airtable base
-![Screenshot of Airtbale base](./screenshots/airtable-blog-shot.PNG)
+![Screenshot of conversion on POSTMAN](./screenshots/day2_md_to_html_req_body.PNG)
+
+# Screenshot of upload conversion on POSTMAN
+
+![Screenshot of upload conversion on POSTMAN](./screenshots/day2_md_to_html_upload.PNG)
