@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const handleError = require("./middleware/error");
-const mdtohtmlRouter = require("./routes/mdtohtml");
+const mdtohtmlRouter = require("./routes/messaging");
 const twilio = require("twilio");
 
 app.use(express.json());
@@ -21,7 +21,7 @@ client.messages
   })
   .then((message) => console.log(message.sid))
   .done();
-  
+
 
 app.use("/api/v1/mdtohtml", mdtohtmlRouter);
 
