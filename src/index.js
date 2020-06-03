@@ -8,10 +8,7 @@ const messagingRouter = require("./routes/messaging");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
-
 app.use("/api/v1/messaging", messagingRouter);
-app.use("/api/v1/email", emailRouter);
 
 app.use(handleError);
 app.listen(process.env.PORT);
