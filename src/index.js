@@ -3,14 +3,25 @@ const app = express();
 require("dotenv").config();
 const handleError = require("./middleware/error");
 const mdtohtmlRouter = require("./routes/mdtohtml");
-const fileUpload = require('express-fileupload')
+const twilio = require("twilio");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(fileUpload({
-  limits: { fileSize: 10 * 1024 * 1024 },
-  abortOnLimit: true
-}));
+
+const client = twilio(
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN
+);
+
+client.messages
+  .create({
+    body: "Testing the twillo API",
+    from: "whatsapp:+14155238886",
+    to: "whatsapp:+2348105487627",
+  })
+  .then((message) => console.log(message.sid))
+  .done();
+  
 
 app.use("/api/v1/mdtohtml", mdtohtmlRouter);
 
