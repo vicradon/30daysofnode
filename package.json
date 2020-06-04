@@ -7,15 +7,25 @@
   "author": "Osinachi Chukwujama<vicraph7@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/socket.io": "^2.1.8",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "twilio": "^3.44.0"
+    "socket.io": "^2.3.0"
   },
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "prod": "tsc && node ./dist/server.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.9",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.3"
   }
 }
