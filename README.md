@@ -1,4 +1,4 @@
-# Day 3: Twillo-WhatsApp API
+# Day 4: Typescript with Socket.io
 
 An API with messaging features built using TypeScript and Express
 
