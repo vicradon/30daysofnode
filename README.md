@@ -1,6 +1,8 @@
-# Day 4: Typescript with Socket.io
+# Day 5: Typescript with Socket.io with tests
 
-An API with messaging features built using TypeScript and Express
+PS: This API would be used from day 4 to day 10.
+
+An API with messaging features built using TypeScript and Express. We can send messages to individuals and groups. DB is a MySQL DB
 
 ## Features
 

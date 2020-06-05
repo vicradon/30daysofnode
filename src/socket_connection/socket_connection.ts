@@ -1,12 +1,11 @@
-module.exports = (server) => {
+module.exports = (server: object) => {
   const io = require("socket.io")(server);
 
-  io.on("connection", (socket) => {
-    socket.on("send-message", (data) => {
-      console.log(data);
-
+  io.on("connection", (socket: any) => {
+    socket.on("send-message", (message: string) => {
+      console.log(`${socket.id} sent ${message}`);
       socket.emit("new-message", {
-        message: data,
+        message,
       });
     });
   });
