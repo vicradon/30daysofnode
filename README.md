@@ -1,4 +1,4 @@
-# Day 5: Typescript with Socket.io with postgresql
+# Day 6: Chat rooms and DMs 
 
 PS: This API would be used from day 4 to day 10.
 
@@ -6,7 +6,8 @@ An API with messaging features built using TypeScript and Express. We can send m
 
 ## Features
 
-1. Send message to connection stream
+1. Send message to individual users
+2. Send messages to chat rooms
 
 ## Dependencies
 
