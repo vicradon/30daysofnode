@@ -1,8 +1,8 @@
-# Day 5: Typescript with Socket.io with tests
+# Day 5: Typescript with Socket.io with postgresql
 
 PS: This API would be used from day 4 to day 10.
 
-An API with messaging features built using TypeScript and Express. We can send messages to individuals and groups. DB is a MySQL DB
+An API with messaging features built using TypeScript and Express. We can send messages to individuals and groups. DB is a Postgresql DB
 
 ## Features
 
@@ -11,6 +11,7 @@ An API with messaging features built using TypeScript and Express. We can send m
 ## Dependencies
 
 1. `socket.io` for messaging service
+1. `postgresql pg javascript driver` for DB service
 2. `express` for server logic
 
 ## To Use do the following
@@ -20,6 +21,6 @@ An API with messaging features built using TypeScript and Express. We can send m
 3. install dependencies
 6. Play around as you wish
 
-# Screenshot of messaging on PostWoman
+# Screenshot of different users sending messages
 
-![Screenshot of messaging on PostWoman](./screenshots/day4_express_typescript_socketio.PNG)
+![Screenshot of different users sending messages](./screenshots/day5_two_users_sending_messages.PNG)
