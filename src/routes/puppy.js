@@ -2,9 +2,9 @@ const router = require("express").Router();
 const db = require("../db/queries");
 
 router.get("/", db.getAllPuppies);
-// router.get("/api/puppies/:id", db.getSinglePuppy);
-// router.post("/api/puppies", db.createPuppy);
-// router.put("/api/puppies/:id", db.updatePuppy);
-// router.delete("/api/puppies/:id", db.removePuppy);
+router.get("/:id", db.getSinglePuppy);
+router.post("/", db.createPuppy);
+// router.put("/:id", db.updatePuppy);
+// router.delete("/:id", db.removePuppy);
 
 module.exports = router;
