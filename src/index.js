@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const puppyRouter = require("./routes/puppy");
+const puppyRouter = require("./routes/puppies");
 const apiResponse = require('./helpers/api_response')
 const errorHandler = require('./middleware/error')
 app.use(express.json());

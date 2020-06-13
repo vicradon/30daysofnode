@@ -11,5 +11,6 @@ CREATE TABLE pups (
   sex VARCHAR
 );
 
+
 INSERT INTO pups (name, breed, age, sex)
   VALUES ('Tyler', 'Retrieved', 3, 'M');

@@ -17,6 +17,7 @@
     "pg-promise": "^10.5.6"
   },
   "scripts": {
+    "init": "psql -U postgres -f puppies.sql",
     "dev": "nodemon --watch . ",
     "start": "node src/index.js ."
   },
