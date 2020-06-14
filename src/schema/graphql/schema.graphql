@@ -1,0 +1,15 @@
+type Query {
+  greeting: String
+  people: [People]!
+}
+
+type People {
+  id: ID
+  first: String!,
+  last: String!,
+}
+
+type Mutation {
+  createPerson(first: String!, last: String!): People
+  deletePerson(id: ID!): People
+}
