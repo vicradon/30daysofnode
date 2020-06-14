@@ -4,7 +4,7 @@ require("dotenv").config();
 const Mutation = require("./resolvers/Mutation");
 const Query = require("./resolvers/Query");
 
-mongoose.connect("mongodb://localhost:27017/joxibooks", {
+mongoose.connect(process.env.MONGO_URL, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });

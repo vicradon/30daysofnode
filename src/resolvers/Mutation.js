@@ -1,20 +1,20 @@
-const People = require("../schema/mongoose/person");
+const Textbook = require("../schema/mongoose/textbook");
 
-const createPerson = async (parent, args) => {
-  const newPerson = new People({ first: args.first, last: args.last });
-  const error = await newPerson.save();
-  if (error) return error;
-  return newPerson;
+const addTextbook = async (parent, args) => {
+  const textbook = new Textbook({ name: args.name, publisher: args.publisher,  });
+  await textbook.save();
+  
+  return textbook;
 };
 
-const deletePerson = async (parent, args) => {
-  const person = await People.findByIdAndDelete(args.id, (err) => {
+const deleteTextbook = async (parent, args) => {
+  const deleted = await Textbook.findByIdAndDelete(args.id, (err) => {
     if (err) return err;
   });
-  return person;
+  return deleted;
 };
 
 module.exports = {
-  createPerson,
-  deletePerson,
+  addTextbook,
+  deleteTextbook,
 };

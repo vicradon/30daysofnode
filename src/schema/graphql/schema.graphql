@@ -1,15 +1,16 @@
-type Query {
-  greeting: String
-  people: [People]!
+type Textbook {
+  id: ID
+  name: String!
+  publisher: String!
+  category: String
 }
 
-type People {
-  id: ID
-  first: String!,
-  last: String!,
+type Query {
+  textbook(id: ID!): Textbook!
+  textbooks: [Textbook]!
 }
 
 type Mutation {
-  createPerson(first: String!, last: String!): People
-  deletePerson(id: ID!): People
+  addTextbook(name: String!, publisher: String!, category: String): Textbook
+  deleteTextbook(id: ID!): Textbook
 }

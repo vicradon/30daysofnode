@@ -1,5 +1,11 @@
 # Day 14: GraphqlQL server with MongoDB
-A graphql server with a mongodb database running on heroku using Auth0 for authentication
+A graphql server with a mongodb database 
 
-## How?
-Each day of June has a project to it. Each project lives in a branch.
+## Screenshot of add single textbook mutation
+![add textbook mutation](./screenshots/add-textbook.png)
+
+## Screenshot of single textbook query
+![single textbook query](./screenshots/single-textbook.png)
+
+## Screenshot of multi textbook query
+![multi textbook query](./screenshots/multiple-textbooks.png)
